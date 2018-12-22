@@ -1,0 +1,316 @@
+.navbar-collapse .navbar-right {
+  float: right;
+  margin-right: 3vw;
+ 
+
+}
+.bg-cust {
+    background-color:  rgba(81, 95, 103, 0.7);
+    margin-bottom: 0;
+}
+
+
+  .jumbotron {
+    
+    background-image: url("hero.jpg");
+    background-attachment: fixed;
+    height: 100vmin;
+    
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    border-radius: 0rem;
+    background-position: center; 
+    background-size: cover;
+    
+  }
+
+  h1.hero-text {
+    
+    font-size: 40max;
+    line-height: auto;
+    color:white;
+    margin-bottom: 2vh;
+    text-shadow: 2px 2px rgba(81, 95, 103,0.5);
+    background-color:rgba(81, 95, 103,0.5);
+    font-family: 'Oswald', sans-serif;
+    border-radius: 3px;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    position: relativ;
+    text-decoration-color:grey;
+  
+  }
+
+.Sample {
+  color: blue;
+}
+
+
+.hero-content { 
+  margin-top: 10%;
+}
+  
+  .navbar {
+    height: 8vh;
+    z-index: 2;
+    
+
+  }
+
+  a.nav-link:active {
+    list-style-position:inside;
+    border: 1px solid skyblue;
+    color: lightskyblue;
+    padding: 4px 6px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+a.nav-link {
+  color: white;
+  font-size: 1em;  
+ 
+}
+
+a.borderlist {
+  color:skyblue;
+  font-size: 0.9rem;
+
+}
+
+.first-brand{
+  color: white; 
+  padding:0;
+  margin-left: 0;
+
+}
+.second-brand{
+  color: skyblue;
+  padding:0;  
+  margin-left: 0;
+
+}
+a.first-brand{
+ 
+  margin-right: -0.2em;
+  display: inline;
+  
+ 
+  
+  
+}
+a.second-brand {
+  margin-left: 0;
+   padding: 0;
+  display: inline;
+ 
+
+}
+
+.navbar-brand {
+  font-family: "Oswald", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.3em;
+  margin-right: 0;
+}
+
+.first-brand::after{
+  content: "";
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid;
+  padding: 0;
+
+}
+.second-brand::before{
+  content: "";
+  display: block;
+  height: 2px;
+  position: 0;
+  border: 0;
+  border-top: 1px solid;
+  color:white;
+  padding: 0;
+
+}
+.services-section{
+background-color: skyblue;
+min-height:150px;
+line-height: 24px;
+padding-bottom: 10px;
+
+}
+
+ 
+
+.service-paragraph {
+  font-size: 15px;
+  margin: 0px 15px;
+  color: white;
+  text-align: left;
+}
+
+h2 {
+  
+  margin-left: 0em;
+  
+  font-family: font89637;
+
+
+}
+h2::after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 2em;
+  border: 0;
+  border-top: 1px solid;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+h3 {
+  text-align: left; 
+ 
+}
+
+.icon-sphere:before {
+  content: "\e9c9";
+  display: inline-block;
+}
+
+.icons {
+  color: white;
+  font-size: 35px;
+ 
+  margin: 0.2em 0em;    
+
+}
+
+.service-heading {
+   color: white;
+   margin: 2em 2em 0em 0em;
+
+}
+
+.service-subhead {
+  color: white;
+  margin: 0.5em 0%;
+  height: 1.5em;
+}
+
+.porfolio-section {
+  margin-top: 80px;
+ 
+  background-color: white;
+}
+
+.content-format {
+ display: flex;
+  padding: 4.5em 0;
+}
+
+.portfolio-thumb{
+  
+  margin: 1em 2em;
+ 
+  
+}
+
+.portfolio-heading {
+  color: rgba(81, 95, 103, 1);
+}
+
+
+.portfolio-thumb::after {
+  position: absalute;
+  content:"";
+  top:0;
+  left:0;
+  width: inherit;
+  height: inherit;
+  color:skyblue;
+}
+
+.portfolio-thumb:hover::after  {
+  opacity: 0.1;
+}
+
+.blue::after {
+  background-color: skyblue;
+}
+
+.about-section {
+  background-color: rgba(81, 95, 103, 0.7);
+}
+
+
+
+.about-text {
+  color: white;
+  font-size: 1rem;
+  padding-right: 2%;
+}
+
+.about-media {
+ 
+  padding-right: 2%;
+}
+
+.about-heading {
+  margin-bottom: 3%;
+  color: white;
+ padding-left: 15px;
+}
+
+.contact-form {
+    background-image: url("bg-contact.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+  }
+  
+.contact-heading{
+  color: white;
+  margin-bottom: 1em;
+}
+.form-bg {
+ 
+  opacity: 6;
+  padding:1em 3.5em;
+  border-radius: 0.5em;
+  background-color: rgba(81, 95, 103, 0.8)
+  
+}
+
+.message-textarea {
+  
+  height: 120px;
+}
+label{
+  color: white;
+}
+.btn-primary {
+  background-color: skyblue;
+  border-color: skyblue;
+
+}
+hr {
+  display: block;
+  height: 1px;
+  width: 1em;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.page-footer{
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 7.5vh;
+}
