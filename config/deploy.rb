@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
 
-server '104.248.21.77', port: 22, roles: [:web, :app, :db], primary: true
+server '68.183.78.91', port: 22, roles: [:web, :app, :db], primary: true
 
 set :application, "EnrouteTechnology"
 set :repo_url, "https://github.com/Musomoka/EnrouteTechnology.git"
@@ -63,7 +63,7 @@ namespace :puma do
     desc 'Initial Deploy'
     task :initial do
       on roles(:app) do
-        before 'deploy:restart', 'puma:start'
+        before 'deploy:restart', 'systemctl restart rails.service'
         invoke 'deploy'
       end
     end
@@ -71,7 +71,7 @@ namespace :puma do
     desc 'Restart application'
     task :restart do
       on roles(:app), in: :sequence, wait: 5 do
-        invoke 'puma:restart'
+        invoke 'systemctl restart rails.service'
       end
     end
   
