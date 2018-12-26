@@ -1,6 +1,6 @@
 
 # Change these
-server '68.183.78.91', port: 80, roles: [:web, :app, :db], primary: true
+server '68.183.78.91', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'https://github.com/Musomoka/EnrouteTechnology.git'
 set :application,     'enroutetechnology'
@@ -13,7 +13,7 @@ set :pty,             true
 set :use_sudo,        false
 set :stage,           :production
 set :deploy_via,      :remote_cache
-set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
+set :deploy_to,       "/home/#{fetch(:user)}/axpps/#{fetch(:application)}"
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid,        "#{shared_path}/tmp/pids/puma.pid"
