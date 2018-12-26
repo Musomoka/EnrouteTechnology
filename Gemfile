@@ -66,6 +66,7 @@ group :development do
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false  
   
+  
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
