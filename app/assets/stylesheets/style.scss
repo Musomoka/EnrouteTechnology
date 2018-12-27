@@ -13,7 +13,7 @@
 
   .jumbotron {
     
-    background-image: url("hero.jpg");
+    background-image: image-url("hero.jpg");
     background-attachment: fixed;
     height: 100vmin;
     
@@ -271,7 +271,7 @@ h3 {
 }
 
 .contact-form {
-    background-image: url("bg-contact.jpg");
+    background-image: image-url("bg-contact.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: 90vh;

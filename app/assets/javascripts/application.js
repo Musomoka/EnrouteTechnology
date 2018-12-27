@@ -16,4 +16,18 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+
 //= require_tree .
+
+
+$(document).ready(function() {
+  $('a[href^=\'#\']').click(function(e) {
+    var position;
+    e.preventDefault();
+    position = $($(this).attr('href')).offset().top;
+    $('body, html').animate({
+      scrollTop: position
+    }, 2000);
+  });
+});
+
