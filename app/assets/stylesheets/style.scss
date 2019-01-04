@@ -1,13 +1,35 @@
-.navbar-collapse .navbar-right {
-  float: right;
+
+
+
+$main-grey:rgba(81, 95, 103,1);
+$opacity-grey:rgba(81, 95, 103,0);
+$default-sec: rgb(255, 137, 27); 
+$default-light: rgb(230, 248, 255);
+
+
+/*.navbar-collapse navbar-toggle {
+  align-self: flex-end;
   margin-right: 3vw;
+  background-color: $default_dark;
+  padding: 2em;
   
+  margin-right: 0px;
+  border-radius: -2px;
  
 
+}*/
+h1{
+  
 }
 .bg-cust {
-    background-color:  rgba(81, 95, 103, 0.7);
+    background-color: $opacity-grey;
     margin-bottom: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    a{
+      color: orange;
+    }
 }
 
 
@@ -15,41 +37,47 @@
     
     background-image: image-url("hero.jpg");
     background-attachment: fixed;
-    height: 100vmin;
-    
+    height: 95vh; 
     background-repeat: no-repeat;
-    
-    border-radius: 0rem;
+    border-radius: 0rem; 
     background-position: center; 
     background-size: cover;
     
   }
-
+  h2.hero-text{
+    font-family: 'Source Code Pro', monospace;
+    color:rgb(255, 255, 255);
+    border-radius: 3px;
+    font-style: italic;
+   
+    text-align: center;
+    vertical-align: middle;
+    position: relativ;
+  }
   h1.hero-text {
-    
-    font-size: 40max;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 10vmax;
+    font-size: 5vw;
     line-height: auto;
-    color:white;
+    color:rgb(255, 137, 27); 
     margin-bottom: 2vh;
-    text-shadow: 2px 2px rgba(81, 95, 103,0.5);
-    background-color:rgba(81, 95, 103,0.5);
-    font-family: 'Oswald', sans-serif;
     border-radius: 3px;
     font-style: italic;
     font-weight: 600;
     text-align: center;
     vertical-align: middle;
     position: relativ;
-    text-decoration-color:grey;
+    text-shadow: 1px 1px  black;
+    
   
   }
 
-.Sample {
-  color: blue;
+body{
+  background-color: $default-light;
 }
-
 .body-css {
   margin: 6vh;
+ 
 }
 .hero-content { 
  
@@ -72,7 +100,6 @@
 
 a.nav-link {
   color: white;
-  font-size: 1em;  
  
 }
 
@@ -89,13 +116,14 @@ a.borderlist {
 
 }
 .second-brand{
-  color: skyblue;
+  
+  border-radius: 3px;
   padding:0;  
   margin-left: 0;
 
 }
 a.first-brand{
- 
+  color: skyblue;
   margin-right: -0.2em;
   display: inline;
   
@@ -122,25 +150,26 @@ a.second-brand {
 .first-brand::after{
   content: "";
   display: block;
-  height: 2px;
+  height: 3 px;
   border: 0;
   border-top: 1px solid;
   padding: 0;
+  color: skyblue;
 
 }
 .second-brand::before{
   content: "";
   display: block;
-  height: 2px;
+  height: 3px;
   position: 0;
   border: 0;
   border-top: 1px solid;
-  color:white;
+  color:skyblue;
   padding: 0;
 
 }
 .services-section{
-background-color: skyblue;
+background-color: $default-sec;
 min-height:150px;
 line-height: 24px;
 padding-bottom: 10px;
@@ -160,7 +189,7 @@ h2 {
   
   margin-left: 0em;
   
-  font-family: font89637;
+  font-family: 'Proza Libre', sans-serif;
 
 
 }
@@ -225,7 +254,7 @@ h3 {
 }
 
 .portfolio-heading {
-  color: rgba(81, 95, 103, 1);
+  color: $main-grey;
 }
 
 
@@ -313,6 +342,6 @@ hr {
 }
 
 .page-footer{
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 7.5vh;
+  background-color: $default-light;
+ 
 }
