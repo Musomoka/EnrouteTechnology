@@ -15,7 +15,7 @@ gem 'sass-rails', '~> 5.0'
  gem 'jquery-rails'
  gem 'jquery-ui-rails'
  # add font-awesome to rails
- gem 'font-awesome-rails'
+ 
 
  # add bootstrap gem
  gem 'bootstrap'

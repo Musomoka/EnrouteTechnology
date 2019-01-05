@@ -19,8 +19,8 @@
 //= require bootstrap-sprockets
 
 //= require_tree .
-
-import '/jquerys/src/core';
+import 'jquery/src/core';
+import '@fortawesome/fontawesome-free/css/css/fontawesome.scss';
 
 $(document).ready(function() {
   $('a[href^=\'#\']').click(function(e) {
