@@ -3,14 +3,14 @@
 
 $main-grey:rgb(66, 95, 112);
 $opacity-grey:rgba(68, 93, 107, 0);
-$default-sec: rgb(255, 137, 27); 
-$default-light: rgb(198, 232, 245);
+$default-sec: rgb(253, 159, 70); 
+$default-light: white;
 $default-primary: rgb(102, 212, 255);
 
 
 /*.navbar-collapse navbar-toggle {
   align-self: flex-end;
-  margin-right: 3vw;
+  margin-right: 3vw;s
   background-color: $default_dark;
   padding: 2em;
   
@@ -24,6 +24,8 @@ $default-primary: rgb(102, 212, 255);
   
   height: 8vh;
   z-index: 2;
+  border-bottom: 0.8vh;
+  border-bottom-color: $default-primary;
  
 }
 .bg-cust {
@@ -50,47 +52,54 @@ $default-primary: rgb(102, 212, 255);
     
   }
   
-  
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: auto;
+  }
   .hero-text1 {
     font-family: 'Source Code Pro', monospace;
     margin-top: 10vmax;
-    font-size: 4vw;
+    font-size: 4vh;
     color: $default-light; 
     margin-bottom: 2vh;
     border-radius: 3px;
     font-style: italic;
     font-weight: 500;
-    text-align: center;
+    
     vertical-align: middle;
-    position: relative;
-    display: flex;
-    text-shadow: 1px 1px  black;
-    flex-wrap: wrap;
+   
+   
+    text-shadow: 0.1rem 0.1rem  black;
     
   
   }
   .hero-text2{
+    
+    
+    vertical-align: middle;
+
     font-family: 'Source Code Pro', monospace;
     border-radius: 3px;
     font-style: italic;
-    text-align: center;
-    vertical-align: middle;
-    position: relativ;
-    font-size: 2vw;
+   
+   
+    font-size: 2vh;
     color: $default-light;
-    text-shadow: 1px 1px black;
+    text-shadow: 0.1rem 0.1rem black;
     
   }
     
   .hero-text2::after{
     content: "";
+    align-self: center;
     display: block;
     height: 2px;
     width: 25vw;
     border: 0;
     border-top: 3px solid;
     color: $default-sec;
-    flex-wrap: wrap;
     margin-top: 4vh;
     margin-bottom: 10vh;
     color: $default-sec;
@@ -178,7 +187,7 @@ a.second-brand {
   font-family: "Oswald", serif;
   font-weight: 200;
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 3vh;
   margin-right: 0;
 }
 
@@ -199,6 +208,7 @@ a.second-brand {
   position: 0;
   border: 0;
   border-top: 1px solid;
+  
   color:skyblue;
   padding: 0;
   
@@ -304,6 +314,14 @@ h3 {
 
 .about-section {
   background-color: rgba(81, 95, 103, 0.7);
+
+
+  .social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+   
+  }
  
 }
 
@@ -320,6 +338,8 @@ h3 {
   padding-top:  4vw;
 }
 
+
+
 .contact-form {
     background-image: image-url("bg-contact.jpg");
     background-size: cover;
@@ -335,7 +355,9 @@ h3 {
   padding-top:  2vw;
 }
 .bottom-right {
-  font-size: 1vw;
+  font-family: 'Noto Serif', serif;
+  font-weight: 100;
+  font-size: 3vw;
   position: absolute;
   bottom: 2vh;
   right: 15vw;
