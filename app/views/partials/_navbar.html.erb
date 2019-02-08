@@ -8,9 +8,9 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   	<ul class="nav navbar-nav navbar-right pull-right  ml-auto ">
+   	<ul class="nav navbar-nav navbar-right pull-right  ml-auto menu ">
 				<li class="nav-item">	
-					<a class="nav-link active borderlist" href="#Home">Home</a>
+					<a class="nav-link" href="#Home">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#Services">Services</a>
@@ -23,10 +23,16 @@
 					<a class="nav-link" href="#Portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#Portfolio">Contact</a>
+					<a class="nav-link" href="#Contact">Contact</a>
 				</li>
-
-			</ul>
+				<li class="nav-item nav-link">
+					<% if user_signed_in? %>
+					<%=current_user.email%>
+					<%= link_to  'sign out' ,destroy_user_session_path	 %>
+				<%end%>
+					
+				</li>
+			</ul> 	
    
   </div>
 </nav>

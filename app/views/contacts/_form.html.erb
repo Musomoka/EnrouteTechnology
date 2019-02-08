@@ -1,0 +1,49 @@
+<form class="container">
+	<h2 class="section-heading contact-heading">Contact</h2>
+
+	<div class=" col-lg-6 col-md-12 col-sm-12 col-xs-12">	
+<%= form_with url: send_mail_path do |form| %>
+<% if @contact.errors.any? %>
+<div id="error_explanation">
+	<h3>
+		<%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+		<ul>
+			<% @contact.errors.full_messages.each do |msg| %>
+			<li>
+				<%= msg %>
+			</li>	
+			<% end %>
+		</ul>
+</div>
+<% end %>
+
+
+
+		<div class="form-group">
+			<%= form.label "Full Name" %><br />
+			<%= form.text_field :name, class: 'form-control', placeholder: "Enter Full Name"%>
+
+		</div>
+		<div class="form-group">
+				<%= form.label :email %><br />
+				<%= form.text_field :email, class: 'form-control', placeholder: "Enter Your Email Address"%>
+				<small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+		</div>
+	</div>
+
+	<div class=" col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+
+		<div class="form-group">
+			<%= form.label :message%><br />
+			<%= form.text_area :message, class: 'form-control',rows: 4, style: "height: 126px" %>
+
+		</div>
+	</div>
+	 <div >
+	 <%= form.submit "Send",class: "btn btn-primary mr-auto col-sm-12 col-md-6 " %>
+   
+  </div>
+
+</form>
+<% end %>

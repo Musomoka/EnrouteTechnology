@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+About.create([{description: "Sample description info", social: "Insert social links icons"}])
+4.times do
+     Portfolio.create([{titel: 'Business Website', description: 'Business profile with modern design aesthetics, Built to ex'}])
+end

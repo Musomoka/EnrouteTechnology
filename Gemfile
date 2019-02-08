@@ -15,8 +15,16 @@ gem 'sass-rails', '~> 5.0'
  gem 'jquery-rails'
  gem 'jquery-ui-rails'
  # add font-awesome to rails
- 
-
+ # add rails admin for administrating the page 
+ gem 'rails_admin'
+ # add devise for user
+ gem 'devise'
+# add bootstrap devise views
+gem 'devise-bootstrap-views', '~> 1.1'
+ #gem carrierwave for images
+ gem 'carrierwave'
+ # gem for awesome printe
+ gem 'awesome_print'
  # add bootstrap gem
  gem 'bootstrap'
  #add popper gem

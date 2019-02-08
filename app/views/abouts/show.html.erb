@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @about.description %>
+</p>
+
+<p>
+  <strong>Social:</strong>
+  <%= @about.social %>
+</p>
+
+<p>
+  <strong>Profile picture:</strong>
+  <%= @about.profile_Picture %>
+</p>
+
+<%= link_to 'Edit', edit_about_path(@about) %> |
+<%= link_to 'Back', abouts_path %>

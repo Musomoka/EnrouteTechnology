@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Social</th>
+      <th>Profile picture</th>
+     
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @abouts.each do |about| %>
+      <tr>
+        <td><%= about.description %></td>
+        <td><%= about.social %></td>
+        <td><%= about.profile_Picture %></td>    
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

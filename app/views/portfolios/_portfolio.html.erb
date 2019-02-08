@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<div class= "col-lg-12">
+<div class = "row">
+    <% @portfolios.each do |portfolio| %>
+        <div class="col-lg-3">
+          <div class="card text-left">
+             
+            <%#=link_to (image_tag url_for(portfolio.image), class:"card-img-top"), portfolio   %>
+              <div class="card-body">
+                <h4 class=<%= portfolio.titel %>>Title</h4>
+                <p class="card-text"><%= portfolio.description %></p>
+              </div>
+         </div>
+        </div>
+    <% end %>
+  </div>
+</div>
+

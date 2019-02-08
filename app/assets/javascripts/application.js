@@ -20,7 +20,6 @@
 
 //= require_tree .
 import 'jquery/src/core';
-import '@fortawesome/fontawesome-free/css/css/fontawesome.scss';
 
 $(document).ready(function() {
   $('a[href^=\'#\']').click(function(e) {

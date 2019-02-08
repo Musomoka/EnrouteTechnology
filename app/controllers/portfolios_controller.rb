@@ -1,11 +1,15 @@
 class PortfoliosController < ApplicationController
-  before_action :set_portfolio, only: [:show, :edit, :update, :destroy]
+  before_action :set_portfolio, only: [:show, :edit, :update, :destroy, :portfolio]
 
   # GET /portfolios
   # GET /portfolios.json
   def index
-    @portfolios = Portfolio.all
+   #   @portfolios = Portfolio.all
   end
+  
+ # def portfolio
+  #  @portfolios = Portfolio.all
+  #end
 
   # GET /portfolios/1
   # GET /portfolios/1.json
@@ -69,6 +73,6 @@ class PortfoliosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def portfolio_params
-      params.require(:portfolio).permit(:titel, :description, :portfolio_image)
+      params.require(:portfolio).permit(:titel, :description, :image, :portfolio_image)
     end
 end

@@ -1,34 +1,54 @@
 
-
-
 $main-grey:rgb(66, 95, 112);
 $opacity-grey:rgba(68, 93, 107, 0);
 $default-sec: #fd9f46; 
 $default-light: white;
-$default-primary: rgb(53, 194, 250);
+$default-primary: rgb(14, 146, 176);
 $default-drk:rgb(16, 29, 49);
-
-
-/*.navbar-collapse navbar-toggle {
-  align-self: flex-end;
-  margin-right: 3vw;s
-  background-color: $default_dark;
-  padding: 2em;
+$default-grey: rgb(117, 127, 133);
   
-  margin-right: 0px;
-  border-radius: -2px;
- 
+@media (max-width: 989px) {
+  .navbar {
+    .navbar-collapse {
+      width: 100vw;
+      background-color:rgba($color: $default-grey, $alpha: 1) ;
+      margin-top:1vh;
+      border-radius: 5px;
+      .nav-item{
+        padding: 10px;
+        font-stretch: expanded;
+        margin: auto;
+        font-size: 3vmax;
+        
+      }
+      .nav-link {
+        color: $default-sec;
+      }
+    }
 
-}*/
-
+    .btn {
+      border-radius: 0px;
+    }
+   
+  }
+}
 .navbar {
-  
-  height: 8vh;
+ 
   z-index: 2;
   border-bottom: 0.8vh;
   border-bottom-color: $default-primary;
- 
+  
+  li{
+    color: white;
+    
+  }
+
+  .nav-item{
+    text-align: right;
+  
+  }
 }
+
 .bg-cust {
     background-color: $default-sec;
     margin-bottom: 0;
@@ -36,12 +56,12 @@ $default-drk:rgb(16, 29, 49);
     padding-right: 5%;
 
     a{
-      color: orange;
+      color: $default-sec;
     }
 }
 
   .jumbotron {
-    background-image: image-url("hero.jpg");
+    
     background-attachment: inherit;
     background-repeat: no-repeat;
     display: flex;
@@ -53,8 +73,37 @@ $default-drk:rgb(16, 29, 49);
     padding-bottom: 10vh;
     margin-bottom: 0;
    
-    
-  }
+    .sidebar{
+      height: 100vh;
+    }
+
+
+    /* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) { 
+  background-image: image-url("hero/hero_pjgmzi_c_scale,w_779.jpg");
+
+
+
+
+}
+    @media only screen and (min-width: 768px) { 
+      background-image: image-url("hero/hero_pjgmzi_c_scale,w_978.jpg");
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media only screen and (min-width: 992px) { 
+      background-image: image-url("hero/hero_pjgmzi_c_scale,w_1343.jpg");
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media only screen and (min-width: 1200){ 
+      background-image: image-url("hero/hero_pjgmzi_c_scale,w_1400.jpg");
+    }
+  }    
+  
   
   .hero-content {
    
@@ -76,7 +125,7 @@ $default-drk:rgb(16, 29, 49);
     vertical-align: middle;
    
    
-    text-shadow: 0.1rem 0.1rem  black;
+    text-shadow: 0.1vmax 0.1vmax  black;
     
   
   }
@@ -92,7 +141,7 @@ $default-drk:rgb(16, 29, 49);
    
     font-size: 4vmax;
     color: $default-light;
-    text-shadow: 0.1rem 0.1rem black;
+    text-shadow: 0.1vmax 0.1vmax $default-drk;
     
   }
     
@@ -100,17 +149,17 @@ $default-drk:rgb(16, 29, 49);
     content: "";
     align-self: center;
     display: block;
-    height: 2px;
+    height: 2vw;
     width: 25vw;
     border: 0;
     border-top: 3px solid;
     color: $default-sec;
     margin-top: 4vh;
-    margin-bottom: 10vh;
+    margin-bottom: 4vh;
     color: $default-sec;
-    
-    
+  
   }
+
   .hero-text1::before{
     content: "";
     margin-bottom: 4vh;
@@ -119,7 +168,7 @@ $default-drk:rgb(16, 29, 49);
     width: 20vw;
     border: 0;
     border-top: 3px solid;
-    margin-left: 30vw;
+    margin-left: 50vw;
     
     color: $default-sec;
   }
@@ -140,10 +189,6 @@ body{
     margin-right: 5px;
 }
 
-a.nav-link {
-  color: white;
- 
-}
 
 
 a.borderlist {
@@ -192,8 +237,9 @@ a.second-brand {
   font-family: "Oswald", serif;
   font-weight: 200;
   font-style: italic;
-  font-size: 3vh;
+  font-size: 2vmax;
   margin-right: 0;
+  text-shadow: 0.1vmax 0.1vmax $default-drk;
 }
 
 .first-brand::after{
@@ -286,6 +332,10 @@ h3 {
   color: white;
   margin: 0.5em 0%;
   height: 1.5em;
+
+  h4{
+    font-size: 3vh;
+  }
 }
 
 .porfolio-section {
@@ -380,10 +430,9 @@ h3 {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-
-
-
-
+.contact-form{
+ 
+}
 .contact-heading{
   color: white;
   margin-bottom: 1em;
@@ -418,12 +467,13 @@ h3 {
 }
 
 .form-bg {
-
+  background-color: rgba($color: $default-drk, $alpha: 0.3);
   opacity: 6;
   padding-top: 2vh;
   border-radius: 0em;
- 
- 
+  margin-right: 0px;
+  margin-left: 0px;
+  
 }
 
 .message-textarea { 
@@ -449,5 +499,6 @@ hr {
 
 .page-footer{
   background-color: $default-light;
+  
  
 } 
