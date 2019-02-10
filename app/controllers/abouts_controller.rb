@@ -1,6 +1,6 @@
 class AboutsController < ApplicationController
   before_action :set_about, only: [:show, :edit, :update]
-
+  before_action :authenticate_user!
   # GET /abouts
   # GET /abouts.json
   def index

@@ -499,6 +499,11 @@ hr {
 
 .page-footer{
   background-color: $default-light;
+  .admin{
+    display: inline;
+    color: $default-drk;
+    
+  }
   
  
 } 
