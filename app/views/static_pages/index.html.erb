@@ -1,3 +1,5 @@
+
+ <%= render 'partials/navbar' %>
 <!--HERO SECTION-->
 
 <div class="container-fluid" id='#Home'>
@@ -190,7 +192,7 @@
 <div class="container-fluid contact-form content-format" id="Contact">
 	<div class="container-fluid form-bg">	
 		<div class="row">
-		<button btn btn-default><%= link_to 'Contact Us', new_contact_path %></button>
+		<%= render 'contacts/form' %>
 		</div>
 	</div>
 </div>

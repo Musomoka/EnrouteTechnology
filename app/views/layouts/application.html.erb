@@ -16,9 +16,13 @@
 
   <body>
 		 <%= render 'partials/navbar' %>
-      <p class="notice notice-primary"><%= notice %></p>
-       <p class="alert alert-warning" role="alert"><%= alert %></p>
+     <div class='container-fluid'>
+        <p class="notice notice-primary"><%= notice %></p>
+        <p class="alert alert-warning" role="alert"><%= alert %></p>
+       <div>
     <%= yield %>
+
      <%= render 'partials/footer' %>
+     
   </body>
 </html>

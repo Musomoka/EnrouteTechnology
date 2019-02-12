@@ -2,11 +2,9 @@ class StaticPagesController < ApplicationController
  
   def index
     @contact = Contact.new
-  end
-
-
-  def contacts_params
-    params.fetch(:contact, {})
+    if User.count == 0 
+      redirect_to new_user_registration_path
+    end
   end
 
 end
