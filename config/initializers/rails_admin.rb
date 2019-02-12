@@ -1,6 +1,10 @@
 RailsAdmin.config do |config|
 
   ### Popular gems integration
+
+  # exclude non table active admin 
+  config.excluded_models = ['ActiveStorage::Blob', 'ActiveStorage::Attachment', 'ActiveStorage::S']
+
   # authorize if admin
   config.authorize_with do
     config.authorize_with do |controller|
