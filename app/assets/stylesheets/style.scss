@@ -34,9 +34,6 @@ $default-grey: rgb(117, 127, 133);
 }
 .navbar {
  
-  z-index: 2;
-  border-bottom: 0.8vh;
-  border-bottom-color: $default-primary;
   
   li{
     color: white;
@@ -48,7 +45,15 @@ $default-grey: rgb(117, 127, 133);
   
   }
 }
-
+.alert {
+  position:fixed; 
+  top: 0px; 
+  left: 0px; 
+  width: 100%;
+  z-index:9999; 
+  border-radius:0px;
+  margin-top: 10vh;
+}
 .bg-cust {
     background-color: $default-sec;
     margin-bottom: 0;
